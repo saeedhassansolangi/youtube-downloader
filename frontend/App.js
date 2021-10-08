@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import HomeScreen from './src/screens/HomeScreen';
 
 import { io } from 'socket.io-client';
-const socket = io('http://10.11.0.211:3000/');
+const socket = io('http://your-device-ip4:3000/');
 
 export default function App() {
   return (

@@ -8,8 +8,7 @@ const getVideoInfo = async (url) => {
       throw new Error(`${url} is not a valid youtube url`);
     }
 
-    const COOKIE =
-      'GPS=1; YSC=WlQqt310qxU; VISITOR_INFO1_LIVE=fXjK__2OyyU; PREF=tz=Asia.Karachi';
+    const COOKIE = 'your-browser-cache';
     const info = await ytdl.getInfo(url, {
       requestOptions: {
         headers: {

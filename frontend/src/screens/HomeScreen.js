@@ -156,13 +156,13 @@ const styles = StyleSheet.create({
   modelDownloaded: {
     paddingVertical: 10,
     paddingHorizontal: 10,
-    backgroundColor: 'rgba(137, 171, 227, 0.99)',
-    height: 250,
-    width: Dimensions.get('window').width - 20,
+    backgroundColor: 'rgba(30,144,255,0.98)',
+    height: 200,
+    width: Dimensions.get('window').width - 10,
     borderRadius: 10,
     marginTop: 200,
 
-    marginHorizontal: 10,
+    marginHorizontal: 5,
   },
 
   text: {

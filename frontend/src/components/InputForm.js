@@ -36,7 +36,7 @@ const InputForm = ({
         setDownloadProgress(progress);
       };
 
-      const URL = 'http://your-device-ip4:3000';
+      const URL = 'http://localhost:3000/';
       const remoteURL = `${URL}/download?videoURL=${video.video_url}&itag=${selectedValue}`;
       const localURI = `${FileSystem.documentDirectory}${videoName}.mp4`;
 
@@ -50,13 +50,10 @@ const InputForm = ({
       const { uri } = await downloadResumable.downloadAsync();
       await MediaLibrary.saveToLibraryAsync(uri);
 
-      console.log(uri);
-
       setLocation(uri);
 
       setHasVideoDownloaded(true);
     } catch (error) {
-      console.log(error);
       Alert.alert('something went wrong', error.message);
     } finally {
       setIsDownloading(false);
